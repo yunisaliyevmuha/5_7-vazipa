@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Music Player</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"/>
+</head>
+<body>
+    <div id="player" class="player">
+        <div>
+            <img src="./images/allMyFriendAreToxic.jpg" alt="" id="cover" class="cover" />
+        </div>
+        <p id="songName">All My Friend Are Toxic</p>
+        <audio id="audio" src="./musics/chumoli-konsta.mp3"></audio>
+        <div class="progres-and-time-container">
+            <div class="progress" id="progress">
+                <div class="progress-container" id="progress-container"></div>
+            </div>
+            <div class="time-container">
+                <span id="start">00:00</span>
+                <span id="end">00:00</span>
+            </div>
+        </div>
+        <div class="volume">
+            <input type="range" id="changeVolume" class="changeVolume" min="0" , max="1" step="0.01">
+        </div>
+        <div class="controlBtns">
+            <button id="backward" class="fa-solid fa-backward-step"></button>
+            <button id="playBtnToggle" class="fa-solid fa-play"></button>
+            <button id="forward" class="fa-solid fa-forward-step"></button>
+        </div>
+    </div>    
+    <script src="./js/app.js"></script>
+</body>
+</html>
